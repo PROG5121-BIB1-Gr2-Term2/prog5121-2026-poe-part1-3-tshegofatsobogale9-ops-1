@@ -97,7 +97,7 @@ public class Main {
         System.out.println("enter password");
         inputpassword =scanner.nextLine();
         
-        //ceck login
+        //check login
         
         if(inputusername.matches(username) && inputpassword.equals(password)){
             System.out.println("welcome" + " " + firstName + " " + lastName +",it is great to see you again.");
