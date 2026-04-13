@@ -23,22 +23,22 @@ public class Main {
         
        boolean isValid =false;
        //first and Last name 
-        System.out.println("enter firstname:");
+        System.out.println("Enter firstname:");
         firstName =scanner.nextLine();
         
-        System.out.println("enter lastname:");
+        System.out.println("Enter lastname:");
         lastName = scanner.nextLine();
     
         while(!isValid){
         System.out.println("Enter username: ");
-        System.out.println("username must contain an underscore and is no more than five characters long .");
+        System.out.println("Username must contain an underscore and is no more than five characters long .");
         username=scanner.nextLine();
         
         //username conditions 
        
        if(username.contains("_")& username.length() <=5){
            isValid=true;
-           System.out.println("username successfully captured");
+           System.out.println("Username successfully captured");
         
     }else{
            System.out.println("Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length");
@@ -50,7 +50,7 @@ public class Main {
        
       while(!isValid){
         System.out.println("Enter password ");
-        System.out.println("the password must be:At least eight charecters long ;Contain a capital letter ;Contain a number ;Contain a special charecter .");
+        System.out.println("The password must be:At least eight charecters long ;Contain a capital letter ;Contain a number ;Contain a special charecter .");
         password =scanner.nextLine();
         
         //password conditions 
@@ -58,7 +58,7 @@ public class Main {
           password.matches(".*[0-9].*") &&
           password.matches(".*[A-Z].*") &&
           password.matches(".*[!@#$^&*()].*")){
-           System.out.println("password succesfully captured");
+           System.out.println("Password succesfully captured");
           isValid = true;
            
        }else{
@@ -70,7 +70,7 @@ public class Main {
         
         while(!isValid){
         System.out.println("Enter cellphone number ");
-        System.out.println("should contain international code +27");
+        System.out.println("Should contain international code +27");
         cellPhoneNumber =scanner.nextLine();
         
         //cell phone number conditions 
@@ -94,17 +94,17 @@ public class Main {
         System.out.println("Enter username:");
         inputusername =scanner.nextLine();
         
-        System.out.println("enter password");
+        System.out.println("Enter password");
         inputpassword =scanner.nextLine();
         
         //check login
         
         if(inputusername.matches(username) && inputpassword.equals(password)){
-            System.out.println("welcome" + " " + firstName + " " + lastName +",it is great to see you again.");
+            System.out.println("Welcome" + " " + firstName + " " + lastName +",it is great to see you again.");
             isValid =true;
             
         }else{
-            System.out.println("username or password incorrect,please try again.");
+            System.out.println("Username or password incorrect,please try again.");
             
            
         }
